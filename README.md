@@ -8,11 +8,11 @@
 
     cd [ virtual env name ]
 
-  1) Activate virtual env
+  a) Activate virtual env
   
     source bin/activate
 
-  2) Deactivate virtual env
+  b) Deactivate virtual env
 
     deactivate
 
@@ -32,24 +32,34 @@
 
 
 5. Run server
-  python3 manage.py runserver
-  !! In case of changing server port || IP
-   => python3 manage.py runserver 8000
-      python3 manage.py runserver 0.0.0.0:8000
 
-7. Checkout local server
-  http://127.0.0.1:8000
-  http://127.0.0.1:8000/admin
+    python3 manage.py runserver
 
-8. Create Admin User
-  python3 manage.py createsuperuser
-  !! In case of error occurred (our project may not work properly until you apply the migrations for app)
-    => python3 manage.py makemigrations
-       python3 manage.py migrate
+    python3 manage.py runserver 8000
 
-9. Create target app
-  python3 manage.py startapp [ app name ]
+    python3 manage.py runserver 0.0.0.0:8000
 
 
-Reference
-=> https://docs.djangoproject.com/ko/5.0/intro/
+6. Checkout local server
+
+    http://127.0.0.1:8000
+
+    http://127.0.0.1:8000/admin
+
+
+7. Create Admin User
+
+    python3 manage.py makemigrations
+
+    python3 manage.py migrate
+   
+    python3 manage.py createsuperuser
+
+    
+8. Create target app
+
+    python3 manage.py startapp [ app name ]
+
+
+
+Reference - https://docs.djangoproject.com/ko/5.0/intro/
