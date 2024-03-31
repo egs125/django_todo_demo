@@ -1,6 +1,6 @@
 # TO-DO Application for Demo
 
-1. Create Django project directory
+## 1. Create Django project directory
 
 
 2. Create virtual env
