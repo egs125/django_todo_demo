@@ -4,12 +4,15 @@
 
 2. Create virtual env
   python3 -m venv [ virtual env name ]
+
   cd [ virtual env name ]
 
-  2-1. Activate virtual env
+  1) Activate virtual env
+  
     source bin/activate
 
-  2-2. Deactivate virtual env
+  2) Deactivate virtual env
+
     deactivate
 
 3. Install Django
