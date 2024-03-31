@@ -1,0 +1,17 @@
+<h2>TO-DO LIST</h2>
+
+{% if todo_list %}
+  <ul>
+    {% for todo in todo_list %}
+      <li>
+        <input type="text" value="{{ todo.todo_content }}" style="width:'400px'"/>
+        <input type="checkbox" checked="{{ todo.is_done }}" />
+
+        <button>EDIT</button>
+        <button>DEL</button>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>NOTHING TO DO</p>
+{% endif %}
