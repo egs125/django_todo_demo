@@ -4,6 +4,7 @@
 
 
 2. Create virtual env
+   
     python3 -m venv [ virtual env name ]
 
     cd [ virtual env name ]
