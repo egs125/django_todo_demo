@@ -19,4 +19,11 @@ def index(request):
   context = {'todo_list': todo_list}
 
   logger.error('.............fetch to-do list')
+
+  logger.debug('This is a debug message')
+  logger.info('This is an info message')
+  logger.warning('This is a warning message')
+  logger.error('This is an error message')
+  logger.critical('This is a critical message')
+
   return HttpResponse(template.render(context, request))
